@@ -1,0 +1,18 @@
+.primary {
+    background-color: #8540F5 !important;
+}
+
+.gray-block {
+    background-color: #F8F9FA !important;
+    height: 75px;
+    width: 100%;
+}
+
+.qwe {
+    position: absolute;
+}
+
+.gray-outer {
+    display: grid;
+    place-content: end center;
+}
