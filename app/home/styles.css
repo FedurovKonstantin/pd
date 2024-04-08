@@ -1,18 +1,51 @@
-.primary {
-    background-color: #8540F5 !important;
-}
-
-.gray-block {
-    background-color: #F8F9FA !important;
-    height: 75px;
+.sub-page-nav-bar-background {
+    background-color: #F8F9FA;
     width: 100%;
+    height: 75px;
+    padding-left: 65px;
+    position: relative;
 }
 
-.qwe {
+
+.sub-page-nav-bar {
     position: absolute;
+    bottom: 0;
 }
 
-.gray-outer {
-    display: grid;
-    place-content: end center;
+.name {
+    color: #212529;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+.student-description {
+    color: #6C757D;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.textarea-label {
+    color: #6C757D;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.section-label {
+    color: #343A40;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 8px;
+    margin-top: 16px;
+}
+
+.save-button {
+    margin-top: 50px;
+}
+
+.page-body {
+    margin-left: 65px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 900px;
 }

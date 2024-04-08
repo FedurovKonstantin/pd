@@ -14,12 +14,69 @@ export default function Home() {
     setActiveTab(tab);
   };
 
-
-
   return (
     <>
       <TopNavBar activeTab={activeTab} handleTabClick={handleTabClick} />
       <SubPageNavBar />
+      <div className='page-body'>
+        <p className="name">Иванов Иван Иванович</p>
+        <p className="student-description">Любитель поиграть в игры, 1 курс 3 группа</p>
+
+        {/* О себе */}
+        <div>
+          <div className="mb-3">
+            <label className="form-label">О себе</label>
+            <textarea className="form-control" id="exampleFormControlTextarea1" rows={6}>
+              Японский геймдизайнер, геймдиректор, сценарист, продюсер и актёр. Кодзима известен своеобразным авторским подходом к созданию игр; ещё до прихода в игровую индустрию он увлекался литературой и кинематографом и позже рассматривал разработку игр как новую возможность для художественного творчества.
+            </textarea>
+          </div>
+        </div>
+
+
+        {/* Контакты */}
+        <div>
+          <p className='section-label'>Контакты</p>
+          <div className="mb-3">
+            <label className="form-label">Почта</label>
+            <input type="email" className="form-control" id="email" placeholder="little_ponny@sfedu.ru" />
+          </div>
+          <div className="mb-3">
+            <label className="form-label">Telegram</label>
+            <input type="email" className="form-control" id="tg" placeholder="@little_ponny" />
+          </div>
+          <div className="mb-3">
+            <label className="form-label">ВКонтакте</label>
+            <input type="email" className="form-control" id="vk" placeholder="@little_ponny" />
+          </div>
+        </div>
+
+        {/* Навыки */}
+        <div>
+          <p className='section-label'>Навыки</p>
+          <div className="form-check">
+            <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+            <label className="form-check-label">
+              IOS
+            </label>
+          </div>
+          <div className="form-check">
+            <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked />
+            <label className="form-check-label">
+              Android
+            </label>
+          </div>
+          <div className="form-check">
+            <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+            <label className="form-check-label">
+              Flutter
+            </label>
+          </div>
+        </div>
+
+        {/* Кнопка */}
+
+        <button type="button" className="btn btn-primary save-button">Сохранить</button>
+      </div>
     </>
   );
 }
@@ -65,10 +122,9 @@ const SubPageNavBar = () => {
   };
 
   return (
-    <div className='gray-outer'>
-      <div className="gray-block"></div>
-      <div className="qwe">
-        <ul className="nav nav-pills">
+    <div className='sub-page-nav-bar-background'>
+      <div className='sub-page-nav-bar'>
+        <ul className="nav nav-tabs">
           <li className={`nav-item`} onClick={() => handleTabClick('resume')}>
             <a className={`nav-link ${activeTab === 'resume' ? 'active' : ''}`} aria-current="page">Резюме</a>
           </li>
